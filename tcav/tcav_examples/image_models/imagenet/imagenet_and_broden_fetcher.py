@@ -20,7 +20,7 @@ in a format that is TCAV readable. Also enables creation of random folders from 
 
 Usage for Imagenet
   imagenet_dataframe = pandas.read_csv("imagenet_url_map.csv")
-  fetch_imagenet_class(path="your_path", class_name="zebra", number_of_images=100,
+  fetch_imagenet_class(path="your_path", class_name="cheetah", number_of_images=100,
                       imagenet_dataframe=imagenet_dataframe)
                     
 Usage for broden:
@@ -109,7 +109,7 @@ def download_image(path, url):
   Args:
     imagenet_dataframe: Pandas Dataframe containing the URLs for different
       imagenet classes.
-    concept: A string representing Imagenet concept(i.e. "zebra").
+    concept: A string representing Imagenet concept(i.e. "cheetah").
 
   Returns:
     A list containing all urls for the imagenet label. For example

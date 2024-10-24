@@ -16,14 +16,14 @@ limitations under the License.
 """ Downloads models and datasets for imagenet
 
     Content downloaded:
-        - Imagenet images for the zebra class.
+        - Imagenet images for the cheetah class.
         - Full Broden dataset(http://netdissect.csail.mit.edu/)
         - Inception 5h model(https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/inception5h.py)
         - Mobilenet V2 model(https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md)
 
     Functionality:
         - Downloads open source models(Inception and Mobilenet)
-        - Downloads the zebra class from imagenet, to illustrate a target class
+        - Downloads the cheetah class from imagenet, to illustrate a target class
         - Extracts three concepts from the Broden dataset(striped, dotted, zigzagged)
         - Structures the data in a format that can be readily used by TCAV
         - Creates random folders with examples from Imagenet. Those are used by TCAV.
@@ -46,7 +46,7 @@ def make_concepts_targets_and_randoms(source_dir, number_of_images_per_folder, n
         subprocess.call(['bash' , 'FetchDataAndModels.sh', source_dir])
 
     # Determine classes that we will fetch
-    imagenet_classes = ['zebra']
+    imagenet_classes = ['cheetah']
     broden_concepts = ['striped', 'dotted', 'zigzagged']
 
     # make targets from imagenet
